@@ -1,0 +1,62 @@
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+font-family:'Rubik Spray Paint', cursive;}
+a {text-decoration: none; color: white;}
+main {background-image: url(../img/fondomain.jpg); background-size: contain; position: center; background-attachment: fixed; padding-bottom: 80px;}
+h1 {text-align: center; font-size: 40px; color: white;}
+h2 {text-align: center; color: white;}
+h3 {color: white;}
+p {color: white;}
+h1:hover   {color:limegreen;}
+.homelogococo {width: 600px; margin-left: 350px;}
+h2 {text-align: center;}
+header input {margin-left: 70px;}
+header ul {margin-left: 40px;}
+footer ul{margin-left: 400px;}
+footer {padding-top: 15px; padding-bottom: 15px; background-color: black;}
+header {padding-top: 15px; padding-bottom: 15px; background-color: black;}
+header nav ul li:hover {color:chartreuse}
+.home__parrafo {text-align: center;}
+header {border-bottom: dashed; color: greenyellow;}
+footer {border-top: dashed; color: greenyellow;}
+header nav ul li {display:inline-block; font-size: 25px; margin-left: 40px;}
+footer ul li {display:inline-block; font-size: 25px; margin-left: 40px;}
+
+
+.quienes-div {display: flex}
+.quienes-div_img { margin-left: 20px; margin-top: 50px;}
+.quienes-div_img1 {width: 200px;}
+.quienes-div_img1_bioprotect {width: 100px;}
+.tecontamos {width: 500px; height: 300px; background-image: url(../img/quienes_fondodiv.png);
+border: 2px solid greenyellow; border-radius: 50px; margin-bottom: 50px; margin-left: 50px; margin-top: 50px;}
+.tecontamos_h2 {margin-top: 20px;}
+.tecontamos_parrafo {text-align: center; margin-top: 30px;}
+.butwp {border-radius: 30px;  width: 100px; position: fixed; right: 15px; bottom: 15px;}
+.butwp:hover {border: solid white;}
+
+
+.maintienda {display: flex; flex-flow: row wrap;}
+.tienda-productos {background-color: none; border: none; width: 900px; height: 600px; display: flex; flex-flow: wrap; margin-left: 40px}
+.tienda-tamaño-img {width: 150px;}
+.categorias {font-size: 20px;  color:lime; top: 25%; margin-left: 60px; background-color: black; border-radius: 30px; text-align: center; border-color: chartreuse; border-style: dashed; width: 250px; height: 340px; margin-top: 100px;}
+.item-categorias {margin-top: 30px;}
+.div-productos {position: relative; margin-left: 60px; margin-top: 50px;}
+.div-productos button {position: absolute; left: 45px; bottom: 70px;}
+li {list-style-type: none;}
+
+.conjunto-preguntas {margin-left: 50px; margin-top: 50px;}
+.preguntas { background-image: url(../img/fondo-signo-pregunta.jpg); background-size: 100%;  width: 500px; border: solid 1px black; border-radius: 4px; padding: 60px; padding-left: 2px; padding-top: 30px; margin-top: 40px;}
+.div-der {margin-left: 55%;}
+.dos-renglones {padding-bottom: 37px;}
+
+
+form {margin-left: 125px;}
+h4 {color: white; margin-top: 50px;}
+.reset-derecha {margin-left: 525px;}
+textarea {margin-top: 5px;}
+section {margin-top: 20px;}
+
+
+
+

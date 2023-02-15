@@ -1,0 +1,533 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------ header y footer ------------------------------------------------------------------------ */
+
+h1,
+h2,
+h3{
+    color: greenyellow;
+}
+
+.logohambu {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all 0.75s;
+    background-color: white;
+}
+
+.logohambu:hover {
+    border: solid black 1px;
+    background-color: greenyellow;
+}
+
+.me-2 {
+    width: 180px;
+}
+
+.botonbuscar {
+    color: black;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+.botonbuscar:hover {
+    border: black solid 3px;
+}
+
+.ulfooter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 1% 0% 1% 0%;
+
+}
+
+.ulfooter li {
+    margin-right: 5%;
+    transition: all 0.25s;
+}
+
+.ulfooter li:hover {
+    background-color: greenyellow;
+    padding: 0.5%;
+    border-radius: 40px;
+}
+
+.ulheader li:hover {
+    background-color: greenyellow;
+    padding: 0.5%;
+    border-radius: 40px;
+}
+
+.ulheader li {
+    transition: all 0.25s;
+}
+
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+header {
+    border-bottom: greenyellow dashed;
+}
+
+footer {
+    border-top: greenyellow dashed;
+}
+
+/* ------------ header y footer ----------tablet-------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .me-2 {
+        width: 300px;
+    }
+}
+
+
+/* ---------------------------home---------------------------------------------------------------------- */
+.logococo {
+    height: 300px;
+}
+
+main {
+    background-image: url(../img/fondomain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+@keyframes homelogococo {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
+
+.homelogococo {
+    animation-name: homelogococo;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-timing-function: ease-in;
+    animation-duration: 7s;
+}
+
+p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.homeh1 {
+    padding-top: 2%;
+}
+
+.homelogococo {
+    width: 70%;
+}
+
+/* -----------------------------boton whatsapp----------------------------------------------------------- */
+.butwp {
+    width: 8%;
+    border-radius: 150px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+
+@media (min-width: 1024px) {
+    .butwp {
+        width: 4%;
+        border-radius: 150px;
+        position: fixed;
+        right: 1%;
+        bottom: 2%;
+    }
+}
+
+
+
+.butwp:hover {
+    border: white solid 3px;
+}
+
+/* -------------------------home----dekstop-------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+    .homelogococo {
+        width: 20%;
+    }
+}
+
+
+/* -----------------------------------quienes somos------------------------------------------------------- */
+
+.quienes-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.quienes-div_img1 {
+    width: 40%;
+    height: 40%;
+}
+
+.arriba {
+    transform: rotate(40deg);
+    transition: all 2s;
+}
+
+.abajo {
+    transform: rotate(-40deg);
+    margin-right: 7%;
+    transition: all 2s;
+}
+
+.arriba:hover {
+    transform: rotate(-360deg);
+    
+}
+
+.abajo:hover {
+    transform: rotate(360deg);
+}
+
+.quienes-div_img1_bioprotect {
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+}
+
+.tecontamos {
+    background-image: url(../img/quienes_fondodiv.png);
+    border-radius: 20%;
+    border: solid greenyellow 1px;
+
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+    margin-right: 13%;
+    margin-left: 13%;
+
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+/* -----------------------quienes somos-------dekstop------------------------------------------------ */
+
+@media (min-width: 1024px) {
+    .tecontamos {
+        width: 500px;
+        margin: 5% 0% 5% 5%;
+        padding: 5% 1% 5% 1%;
+        height: 60%;
+    }
+
+    .quienes-div {
+        width: 50%;
+        height: 50%;
+    }
+
+    .mainquienes {
+        display: flex;
+        flex-flow: nowrap row;
+    }
+}
+
+/* ---------------------------------tienda----------------------------------------------------------- */
+
+
+.botoncomprar {
+    color: black;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+.tienda-tamaño-img {
+    width: 150px;
+}
+
+.titulocategorias {
+    margin: 5% 0% 0% 0%;
+    color: greenyellow;
+}
+
+.categorias ul li {
+    font-size: 120%;
+    margin-bottom: 25%;
+}
+
+.ulcategorias {
+    padding: 0;
+}
+
+.productos-a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "categorias bigbud"
+        "categorias bigone";
+
+    margin: 0% 0% 0% 10%;
+}
+
+.productos-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10%;
+    margin: 10% 0% 30% 0%;
+}
+
+.titulocategorias {
+    margin-bottom: 20%;
+}
+
+
+.categorias {
+    grid-area: categorias;
+    border: cyan solid 2px;
+    border-radius: 20px;
+    width: 85%;
+    height: 70vh;
+    margin: 20% 0% 0% 0%;
+    background-color: black;
+}
+
+.divproductos {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.bigbud {
+    grid-area: bigbud;
+}
+
+.bigone {
+    grid-area: bigone;
+    margin-top: 5%;
+}
+
+/* -------------------------tienda-----------------tablet---------------------------------------------*/
+
+@media (min-width: 768px) {
+    .categorias {
+        width: 60%;
+        height: 80%;
+    }
+
+    .tienda-tamaño-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* -------------------------tienda-----------------dekstop-------------------------------------------- */
+
+@media (min-width: 1024px) {
+    .ulcategorias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .titulocategorias {
+        margin: 5% 0% 5% 0%;
+    }
+
+    .categorias ul li {
+        margin-bottom: 10%;
+    }
+
+    .categorias {
+        margin: 5% 0% 0% 0%;
+        width: 40%;
+    }
+
+    .productos-a {
+        margin: 0% 0% 0% 2%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .bigone {
+        margin-top: 0;
+    }
+
+    .productos-b {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 30%;
+        margin-bottom: 20%;
+    }
+
+    .tienda-tamaño-img {
+        width: 250px; height: 250px;
+    }
+
+}
+
+
+
+
+/* ------------------------preg frecuentes-------------------------------------------------------- */
+
+.conjunto-preguntas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 15%;
+    margin: 5% 5% 50% 5%;
+}
+
+.preguntas {
+    border: #005D0B 2px solid;
+    border-radius: 20px;
+    background: linear-gradient(to left bottom, #005D0B, black)
+}
+
+.mainpreguntas {
+    padding-bottom: 55%;
+}
+
+/* ---------preg frecuentes----dekstop----------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+    .preguntas {
+        width: 40%;
+    }
+
+    .conjunto-preguntas {
+        display: grid;
+        row-gap: 0;
+        margin-bottom: 0;
+    }
+
+    .derecha {
+        margin-left: 60%;
+
+
+    }
+
+    .mainpreguntas {
+        padding-bottom: 5%;
+    }
+
+    .maintienda {
+        padding-bottom: 0.25%;
+    }
+}
+
+
+
+/* ---------------------------------contacto--------------------------------------------------- */
+
+.maincontacto {
+    padding-bottom: 5%;
+}
+
+form div input {
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+form div textarea {
+    width: 90%;
+}
+
+form h2 {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 10%;
+}
+
+form h3 {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 5%;
+}
+
+form {
+    margin: 5% 0 0 0;
+}
+
+.enviar {
+    margin-left: 5%;
+    width: 15%;
+    margin-right: 30%;
+}
+
+.reset {
+    margin-right: 5%;
+    width: 25%;
+}
+
+/* ---------------contact-----dekstop----------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+    .formcontacto {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .divinputs {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .enviar,
+    .reset {
+        color: black;
+        background-color: greenyellow;
+        border-radius: 10px;
+    }
+
+    .inputcontacto {
+        width: 400px;
+    }
+
+    .comentarios {
+        width: 60%;
+    }
+}
