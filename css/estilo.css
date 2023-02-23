@@ -39,13 +39,19 @@ h3{
 }
 
 .botonbuscar {
-    color: black;
+    color:black;
     background-color: greenyellow;
     border-radius: 10px;
+    transition: all 0.5s;
+    margin-left: 10px;
 }
 
 .botonbuscar:hover {
     border: black solid 3px;
+    color:black;
+    background-color: greenyellow;
+    border-radius: 10px;
+    opacity: 70%;
 }
 
 .ulfooter {
@@ -98,6 +104,23 @@ header {
 
 footer {
     border-top: greenyellow dashed;
+}
+
+header .navbar-brand .logo{
+    max-width: 50px;
+}
+
+header .navbar .nav-link{
+    color:#fff;
+}
+header .navbar .active{
+    color: #fff!important;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+header .icon-menu{
+    color: #fff;
+    font-size: 26px;
 }
 
 /* ------------ header y footer ----------tablet-------------------------------------------------------- */
@@ -166,7 +189,7 @@ p {
 
 @media (min-width: 1024px) {
     .butwp {
-        width: 4%;
+        width: 5%;
         border-radius: 150px;
         position: fixed;
         right: 1%;
@@ -198,11 +221,6 @@ p {
 }
 
 
-.quienes-div_img1 {
-    width: 40%;
-    height: 40%;
-}
-
 .arriba {
     transform: rotate(40deg);
     transition: all 2s;
@@ -223,11 +241,6 @@ p {
     transform: rotate(360deg);
 }
 
-.quienes-div_img1_bioprotect {
-    width: 20%;
-    height: 20%;
-    margin-left: 10%;
-}
 
 .tecontamos {
     background-image: url(../img/quienes_fondodiv.png);
@@ -253,158 +266,236 @@ p {
         padding: 5% 1% 5% 1%;
         height: 60%;
     }
+.quienes-div_img1 {
+    width: 100px; height: 200px;
+}
 
-    .quienes-div {
-        width: 50%;
-        height: 50%;
-    }
-
+.quienes-div {
+    margin-left: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 14rem;
+    align-items: center;
+}
     .mainquienes {
         display: flex;
         flex-flow: nowrap row;
     }
-}
-
-/* ---------------------------------tienda----------------------------------------------------------- */
-
-
-.botoncomprar {
-    color: black;
-    background-color: greenyellow;
-    border-radius: 10px;
-}
-
-.tienda-tamaño-img {
-    width: 150px;
-}
-
-.titulocategorias {
-    margin: 5% 0% 0% 0%;
-    color: greenyellow;
-}
-
-.categorias ul li {
-    font-size: 120%;
-    margin-bottom: 25%;
-}
-
-.ulcategorias {
-    padding: 0;
-}
-
-.productos-a {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "categorias bigbud"
-        "categorias bigone";
-
-    margin: 0% 0% 0% 10%;
-}
-
-.productos-b {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 10%;
-    margin: 10% 0% 30% 0%;
-}
-
-.titulocategorias {
-    margin-bottom: 20%;
-}
-
-
-.categorias {
-    grid-area: categorias;
-    border: cyan solid 2px;
-    border-radius: 20px;
-    width: 85%;
-    height: 70vh;
-    margin: 20% 0% 0% 0%;
-    background-color: black;
-}
-
-.divproductos {
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: center;
-    align-items: center;
-
 
 }
 
-.bigbud {
-    grid-area: bigbud;
+/* ---------------------------------tienda-------------celu------------------------------------------ */
+
+@media (min-width: 350px) and (max-width: 749px){
+
+    .maintienda {
+        padding-bottom: 100%;
+    }
+    .botoncomprar {
+        color: white;
+        background-color: rebeccapurple;
+        border-radius: 10px;
+        border: greenyellow solid 1px;
+        transition: all 0.5s;
+    }
+    
+    .botoncomprar:hover {
+        color: white;
+        background-color: rebeccapurple;
+        border-radius: 10px;
+        border: greenyellow solid 1px;
+        opacity: 70%;
+    }
+    
+    .categoria {
+        padding: 2%;
+        position: absolute;
+        right: 8%;
+        top: 7%;
+        transform: rotate(-30deg);
+        color: white;
+        background-color: rebeccapurple;
+        border-radius: 10px;
+        border: greenyellow solid 1px;
+    }
+
+    
+    .maintienda .img-productos {
+        max-width: 110px;
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    
+    .maintienda .card {
+        background-color: black;
+        border: solid greenyellow 2px;
+    }
+    
+    
+    .maintienda .card .separador {
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+        opacity: 1;
+        color: greenyellow;
+    }
+
+
+    .div-producto-tienda {
+        position: relative;
+    }
+    
+    .maintienda .card .precio {
+        background-color: rebeccapurple;
+        width: 80px;
+        text-align: center;
+        border-radius: 10px;
+        transform: rotate(24deg);
+        position: absolute;
+        bottom: 3%;
+        left: 15%;
+    }
+
+    .microscopio, 
+ .supermix,
+ .bigbud {
+    padding-bottom: 10%;
+ }
+
 }
 
-.bigone {
-    grid-area: bigone;
-    margin-top: 5%;
-}
+
 
 /* -------------------------tienda-----------------tablet---------------------------------------------*/
+@media (min-width: 750px) and (max-width: 1023px){
 
-@media (min-width: 768px) {
-    .categorias {
-        width: 60%;
-        height: 80%;
+    .maintienda .card {
+        background-color: black;
+        border: solid greenyellow 2px;
+        width: 300px; height: 30rem;
     }
 
-    .tienda-tamaño-img {
-        width: 200px;
-        height: 200px;
+
+    .maintienda {
+        padding-bottom: 30%;
     }
+    .card {
+        height: 5rem; width: 15rem;
+    }
+
+    .div-producto-tienda {
+        position: relative;
+    }
+
+    .card-body {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .microscopio, 
+ .supermix,
+ .bigbud {
+    padding-bottom: 10%;
+ }
+
+
 }
 
 /* -------------------------tienda-----------------dekstop-------------------------------------------- */
 
-@media (min-width: 1024px) {
-    .ulcategorias {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
 
+.maintienda .card {
+    background-color: black;
+    border: solid greenyellow 2px;
+}
+
+
+.categoria {
+    padding: 2%;
+    position: absolute;
+    right: 8%;
+    top: 7%;
+    transform: rotate(-30deg);
+    color: white;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: greenyellow solid 1px;
+}
+
+.maintienda .card .precio {
+    background-color: rebeccapurple;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    transform: rotate(24deg);
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+}
+
+.maintienda .card .separador {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    opacity: 1;
+    color: greenyellow;
+}
+
+
+.maintienda .img-productos {
+    max-width: 110px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+
+    .div-producto-tienda {
+        position: relative;
     }
 
-    .titulocategorias {
-        margin: 5% 0% 5% 0%;
-    }
 
-    .categorias ul li {
-        margin-bottom: 10%;
-    }
-
-    .categorias {
-        margin: 5% 0% 0% 0%;
-        width: 40%;
-    }
-
-    .productos-a {
-        margin: 0% 0% 0% 2%;
+    .card-body {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
     }
-
-    .bigone {
-        margin-top: 0;
-    }
-
-    .productos-b {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 30%;
-        margin-bottom: 20%;
-    }
-
-    .tienda-tamaño-img {
-        width: 250px; height: 250px;
-    }
+.botoncomprar {
+    width: 45%;
 
 }
+ .microscopio, 
+ .supermix,
+ .bigbud {
+    padding-bottom: 10%;
+ }
+
+ .botoncomprar {
+    color: white;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: greenyellow solid 1px;
+    transition: all 0.5s;
+}
+
+.botoncomprar:hover {
+    color: white;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: greenyellow solid 1px;
+    opacity: 70%;
+}
+
+
+
+
 
 
 
@@ -453,7 +544,7 @@ p {
     }
 
     .maintienda {
-        padding-bottom: 0.25%;
+        padding-bottom: 2rem;
     }
 }
 
@@ -461,8 +552,10 @@ p {
 
 /* ---------------------------------contacto--------------------------------------------------- */
 
+
+
 .maincontacto {
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 form div input {
@@ -486,9 +579,6 @@ form h3 {
     margin-left: 5%;
 }
 
-form {
-    margin: 5% 0 0 0;
-}
 
 .enviar {
     margin-left: 5%;

@@ -2,118 +2,294 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-dark">
-            <div class="container-fluid">
-                <form  class="d-flex mt-3 navar-brand" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Escribir" aria-label="search">
-                    <button class="botonbuscar" type="submit">Buscar</button>
-                  </form>
-                  <button class="bg-dark border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span><img class="logohambu" src="../img/logococoup.png" alt="logo coco up"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../html/quienes-somos.html">Quienes Somos?</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../html/tienda.html">Tienda</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../html/preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../html/contacto.html">Contacto</a>
-                      </li>
-                </div>
+  <header>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../img/logococoup.png" alt="" class="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preguntas-frecuentes.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+            <button class="btn btn-outline-success botonbuscar" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+
+  <main class="maintienda">
+    <h1 class="titulotienda">Aprovechá nuestras Promos!</h1>
+    <p class="bg-dark py-2"> carpas - fertilizantes - sustratos - accesorios</p>
+
+    <section class="seccion-tienda">
+      <div class="container tienda-productos">
+
+        <div class="row fila">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda bigbud"><img src="../img/big-bud-250ml.png" class="card-img-top img-productos"
+                  alt="big bud big-bud-250ml">
+                <span class="categoria">Fertilizante</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Big Bud 250ml</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
               </div>
             </div>
-          </nav>
-    </header>
-    <main class="maintienda">
-        <h1 class="titulotienda">Aprovechá nuestras Promos!</h1>
-
-        <div class="productos-a">
-            <div class="categorias">
-                <h2 class="titulocategorias">
-                    Categorias
-                </h2>
-                <ul class="ulcategorias">
-                    <li class="item-categorias"> <a href="">Carpas</a></li>
-                    <li class="item-categorias"> <a href="">Fertilizantes</a></li>
-                    <li class="item-categorias"> <a href="">Sustratos</a></li>
-                    <li class="item-categorias"> <a href="">Accesorios</a></li>
-                </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/big-one-100ml.png" class="card-img-top img-productos"
+                  alt="big-one-100ml">
+                <span class="categoria">Fertilizante</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Big One 100ml</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
             </div>
-            <div class="divproductos bigbud"><img class="tienda-tamaño-img" src="../img/big-bud-250ml.png"
-                    alt="big big-bud-250ml">
-                <button class="botoncomprar">Comprar</button>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/bio-neem-30ml.png" class="card-img-top img-productos"
+                  alt="bio-neem-30ml">
+                <span class="categoria">Fertilizante</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Bio Neem 30ml</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
             </div>
-            <div class="divproductos bigone"> <img class="tienda-tamaño-img bigone" src="../img/big-one-100ml.png"
-                    alt="big-one100ml">
-                <button class="botoncomprar">Comprar</button>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/bioprotect-100ml.png" class="card-img-top img-productos"
+                  alt="bioprotect-100ml">
+                <span class="categoria">Fertilizante</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Bioprotect 100ml</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="productos-b">
-            <div class="divproductos"> <img class="tienda-tamaño-img" src="../img/feeding-grow.png" alt="feeding-grow">
-                <button class="botoncomprar">Comprar</button>
+
+        <div class="row fila my-4">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/feeding-grow.png" class="card-img-top img-productos"
+                  alt="feeding-grow">
+                <span class="categoria">Fertilizante</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Feeding Grow</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
             </div>
-            <div class="divproductos"> <img class="tienda-tamaño-img" src="../img/maceta-rootshouse.png"
-                    alt="maceta-rootshouse">
-                <button class="botoncomprar">Comprar</button>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/flora-booster-100ml.png"
+                  class="card-img-top img-productos" alt="flora-booster-100ml">
+                <span class="categoria">Fertilizante</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Flora Booster 100ml</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
             </div>
-            <div class="divproductos"> <img class="tienda-tamaño-img" src="../img/maceta-tela-santa-planta.png" altv>
-                <button class="botoncomprar">Comprar</button>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/maceta-roots-house.png"
+                  class="card-img-top img-productos" alt="maceta-roots-house">
+                <span class="categoria">Accesorio</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Roots House 10L</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
             </div>
-            <div class="divproductos"> <img class="tienda-tamaño-img" src="../img/microscopio.png" alt="microscopiop">
-                <button class="botoncomprar">Comprar</button>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/Maceta-tela-santa-planta.png"
+                  class="card-img-top img-productos" alt="Maceta-tela-santa-planta">
+                <span class="categoria">Accesorio</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Maceta Geotextil</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
             </div>
-            <div class="divproductos"> <img class="tienda-tamaño-img" src="../img/probox-clasic-basic.png"
-                    alt="carpa Garden High Pro">
-                <button class="botoncomprar">Comprar</button>
-            </div>
-            <div class="divproductos"> <img class="tienda-tamaño-img" src="../img/supermix.png" alt="supermix">
-                <button class="botoncomprar">Comprar</button>
-            </div>
+          </div>
         </div>
 
 
+        <div class="row fila">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda microscopio"><img src="../img/microscopio.png" class="card-img-top img-productos"
+                  alt="microscopio">
+                <span class="categoria">Accesorio</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Microscopio</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/probox-clasic-basic.png"
+                  class="card-img-top img-productos" alt="probox-clasic-basic">
+                <span class="categoria">Carpa</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">probox-clasic-basic</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-comprar botoncomprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda"><img src="../img/pulverizador-2l.png" class="card-img-top img-productos"
+                  alt="pulverizador-2l">
+                <span class="categoria">Accesorio</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">Pulverizador 2L</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="div-producto-tienda supermix"><img src="../img/supermix.png" class="card-img-top img-productos"
+                  alt="supermix">
+                <span class="categoria">Sustrato</span>
+                <span class="precio">$2500</span>
+              </div>
+              <hr class="separador">
+              <div class="card-body">
+                <h5 class="card-title">SuperMix 50L</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary botoncomprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <a href="https://api.whatsapp.com/send?phone=+541157995640"><img class="butwp" src="../img/imgwp.png"
-                alt="Whatsapp"></a>
-    </main>
-
-    <footer>
-        <ul class="ulfooter">
-            <li> <a class="lifooteryheader" href="https://facebook.com/profile.php?id=100087546101786&sk=about"
-                    target="_blank">Facebook</a></li>
-            <li> <a class="lifooteryheader" href="https://instagram.com/cocoupgrow" target="_blank">Instagram</a> </li>
-            <li> <a class="lifooteryheader" href="">Whatsapp</a> </li>
-        </ul>
-
-    </footer>
+      </div>
+    </section>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <a href="https://api.whatsapp.com/send?phone=+541157995640"><img class="butwp" src="../img/imgwp.png"
+        alt="Whatsapp"></a>
+  </main>
+
+  <footer>
+    <ul class="ulfooter">
+      <li> <a class="lifooteryheader" href="https://facebook.com/profile.php?id=100087546101786&sk=about"
+          target="_blank">Facebook</a></li>
+      <li> <a class="lifooteryheader" href="https://instagram.com/cocoupgrow" target="_blank">Instagram</a> </li>
+      <li> <a class="lifooteryheader" href="">Whatsapp</a> </li>
+    </ul>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
