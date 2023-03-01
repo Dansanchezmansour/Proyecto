@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
+  <title>Contacto | Coco Up</title>
   <link rel="shortcut icon" href="../img/logococoup.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -60,10 +60,10 @@
 
 
 
-  <main class="maincontacto">
+  <main class="maincontacto container-fluid">
     <h1>Dejanos tu comentario</h1>
-    <form class="formcontacto">
-      <div class="divinputs">
+    <form class="formcontacto row">
+      <div class="divinputs col-lg-6">
         <div class="inputcontacto">
           <h2>Nombre
 
@@ -79,17 +79,19 @@
 
           </h2><input type="email">
         </div>
+      </div>
+      <div class="divtextarea col-lg-6">
         <div class="comentarios">
-          <h2>Escriba aquí</h2>
+          <h2>Escriba aquí su comentario</h2>
           <textarea name="" id="" cols="80" rows="10">
 
             </textarea>
         </div>
+        <div class="botones-contacto">
+          <input class="enviar" type="submit">
+          <input class="reset" type="reset">
+        </div>
       </div>
-      <div class="botones-contacto">
-      <input class="enviar" type="submit">
-      <input class="reset" type="reset">
-    </div>
     </form>
 
 
